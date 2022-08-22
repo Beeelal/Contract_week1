@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contract.pk</title>
+	<link rel="stylesheet" type="text/css" href="contract.css">
+	<link rel="icon" type="image/x-icon" href="favicon.ico">
+	<style type="text/css">
+		body
+		{
+			background-image: url(pic7.webp);
+			background-size: cover;
+			background-attachment: fixed;
+		}
+
+		
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+	<center><h2>CONTRACT.PK</h2></center>
+	<center><h3>Get a lawyer, from your house!</h3></center>
+
+	<center><p style="color:ghostwhite;">Click the "View" button to show or hide the list of the functional and non-functional requirements of this project:</p></center>
+
+<center><button type="button" class="btn" onclick="myFunction()"><b>View</b></button></center>
+<br>
+
+<div id="myDIV">
+<center><table style="width:50%" class="tble">
+  <tr>
+    <th style="background-color:lightblue;">Functional Requirements</th>
+    <th style="background-color:lightblue;">Non Functional Requirements</th>
+  </tr>
+  <tr>
+    <td>Descriptions of System Reports</td>
+    <td>Questions should be answered in a very less time</td>
+  </tr>
+  <tr>
+    <td>Data handling logic</td>
+    <td>Should be required that an account is created</td>
+  </tr>
+  <tr>
+    <td>Details of Logic</td>
+    <td>Account should be locked after several wrong login attempts</td>
+  </tr>
+  <tr>
+    <td>Information about workflows performed by system</td>
+    <td>The given answers should be correct and reliable</td>
+  </tr>
+  <tr>
+    <td>Should define who is aloowed to create?modify?delete system data</td>
+    <td>Should show the rate(%) of the answer being correct</td>
+  </tr>
+  <tr>
+    <td>Transcation (if any) should be handled carefully</td>
+    <td>There should be several languages to talk in</td>
+  </tr>
+  <tr>
+    <td>Rules about the services provided</td>
+    <td>Should be several currency rates</td>
+  </tr>
+  <tr>
+    <td>Lists of services that are provided</td>
+    <td>User should be able to ask questions by speaking or writing</td>
+  </tr>
+  <tr>
+    <td>Lists of questions that the user can ask</td>
+    <td>Answers of the questions should be written but user should also be able to listen to the answer</td>
+  </tr>
+  <tr>
+    <td>FAQ's (Frequently Asked Questions)</td>
+    <td>The user interface should be friendly</td>
+  </tr>
+  <tr>
+    <td>Should show the permission granted by the PPC</td>
+    <td>Should be able to share your received answers across other apps</td>
+  </tr>
+  <tr>
+    <td>Display estimated time for their queries to be answered</td>
+    <td>The service should be able to perform smoothly under high load /website traffic</td>
+  </tr>
+  <tr>
+    <td>Should define who is allowed to create/modify/delete the system data</td>
+    <td>The software should be easy to use</td>
+  </tr>
+  <tr>
+    <td>Should notify the user their query is answered</td>
+    <td>User should be able to tell if the received answer was helpful</td>
+  </tr>
+  <tr>
+    <td>User should be able to re-ask a questions if not satisfied by the given answer, and the next answer should be more accurate</td>
+    <td>Performance of the software should be good(like loading pages)</td>
+  </tr>
+  <tr>
+    <td>Should display recommended questions when writing the questions in the question bar</td>
+    <td>All previous records of the user should be kept safe</td>
+  </tr>
+  <tr>
+    <td>Should never reaveal the identity of the user</td>
+    <td>Should tell the user if the received answer has halped anyone else with their matter without revelaing their identity</td>
+  </tr>
+  <tr>
+    <td>Should allow user to veriify their account by their phone number</td>
+    <td>There should be a public feed in the software</td>
+  </tr>
+  <tr>
+    <td>User should login evrytime to ensure safety/security</td>
+    <td>User should be able to post their reviews about the answers to the public feed in the software anonymously</td>
+  </tr>
+  <tr>
+    <td>Given answers should be accurate</td>
+    <td>Software should be compatible with different devices (e.g. ios and androids)</td>
+  </tr>
+</table></center>
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myDIV");
+  if (x.style.display === "none") {
+    x.style.display = "block";
+  } else {
+    x.style.display = "none";
+  }
+}
+</script>
+
+<br>
+<br>
+
+
+<center><p style="color:ghostwhite;">Please Enter number of hours in the text-field</p></center>
+
+ <center><input type="number" class="input-field" placeholder="Type something..." id="myInput">
+   <button type="button" class="buton" onclick="getInputValue();" onclick="myFunction();"><center><b>Done</b></center></button></center>
+    
+    <script>
+        function getInputValue(){
+            // Selecting the input element and get its value 
+            var inputVal = document.getElementById("myInput").value;
+            
+            document.getElementById("demo").innerHTML = inputVal*10;
+            // Displaying the value
+            //alert(inputVal * 2);
+        }
+    </script>
+    <center><p style="color:ghostwhite;">Click the "Done" button to see the rate in usd according to the number of hours</p></center>
+<center><b><p id="demo"></p></b></center>
+
+<br>
+ <div id="content-wrap">
+<footer id = "footer">
+  <p style="color:ghostwhite;"><b>Username:</b> Bilal Arshad #5665<br> <b>Email: </b>
+ <a href="mailto:bilalmirzh500@gmail.com" style="color:skyblue;">bilalmirzh500@gmail.com</a></p>
+</footer>
+
+</body>
